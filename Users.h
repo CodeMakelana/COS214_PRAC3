@@ -15,6 +15,7 @@ class Users {
 
     public :
     Users(std::vector<ChatRoom*>& chatrooms, std::string name);
+    virtual ~Users() {}
     void sendMessage(std::string message, ChatRoom* chatroom);
     void receiveMessage(std::string message, Users* fromUser, ChatRoom* chatroom);
 };
