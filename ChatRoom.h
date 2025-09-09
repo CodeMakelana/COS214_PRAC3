@@ -5,7 +5,7 @@
 #include <list>
 
 class ChatRoom {
-    private :
+    protected :
     //create a list of strings to hold messages
     std::list<std::string> chatHistory;
     //create a list of Users to hold users
