@@ -4,6 +4,8 @@
 #include <string>
 #include <list>
 
+#include <iostream>
+
 class ChatRoom {
     protected :
     //create a list of strings to hold messages
