@@ -1,0 +1,46 @@
+# Build directories
+cmake-build-debug/
+cmake-build-release/
+build/
+
+# IDE files
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Compiled Object files
+*.o
+*.obj
+
+# Executables
+*.exe
+*.out
+*.app
+
+# Libraries
+*.lib
+*.a
+
+# PDF Zone Identifier files
+*.Zone.Identifier
+
+# CMake
+CMakeCache.txt
+CMakeFiles/
+CMakeScripts/
+Testing/
+Makefile
+cmake_install.cmake
+install_manifest.txt
+compile_commands.json
+CTestTestfile.cmake
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
