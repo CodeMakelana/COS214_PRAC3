@@ -5,6 +5,7 @@
 #include <vector>
 
 #include <iostream>
+#include "ChatRoom.h"
 
 class Users {
     protected : 
@@ -13,7 +14,7 @@ class Users {
     std::vector<ChatRoom*> chatrooms;
 
     public :
-    Users(ChatRoom* chatroom, std::string name);
+    Users(std::vector<ChatRoom*> chatrooms, std::string name);
     void sendMessage(std::string message, ChatRoom* chatroom);
     void receiveMessage(std::string message, Users* fromUser, ChatRoom* chatroom);
 };
