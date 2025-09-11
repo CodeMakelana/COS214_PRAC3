@@ -6,22 +6,19 @@
 
 #include <iostream>
 
-
 class ChatRoom {
-protected:
-    std::string name;
+    protected :
+    //create a list of strings to hold messages
     std::list<std::string> chatHistory;
+    //create a list of Users to hold users
     std::list<Users*> users;
 
-public:
-    ChatRoom(const std::string& name) : name(name) {}
+    public :
     virtual ~ChatRoom() {}
-    std::string getName() const { return name; }
-
-    virtual void registerUser(Users user) = 0;
-    virtual void sendMessage(std::string message, Users fromUser) = 0;
-    virtual void saveMessage(std::string message, Users fromUser) = 0;
-    virtual void removeUser(Users user) = 0;
+    virtual void registerUser (Users user) = 0;
+    virtual void sendMessage (string message, Users fromUser) = 0;
+    virtual void saveMessage (string message, Users fromUser) = 0;
+    virtual void removeUser (Users user) = 0;
 };
 
 #endif //CHATROOM_H
