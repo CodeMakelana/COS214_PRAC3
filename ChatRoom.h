@@ -3,8 +3,11 @@
 
 #include <string>
 #include <list>
-
+// #include "Users.h"
+#include <string>
 #include <iostream>
+
+class Users;
 
 class ChatRoom {
     protected :
