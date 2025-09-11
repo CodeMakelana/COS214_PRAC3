@@ -1,6 +1,6 @@
 #include "CtrlCat.h"
 
-CtrlCat::CtrlCat() {
+CtrlCat::CtrlCat() : ChatRoom("CtrlCat") {
     //initialize the users and chatHistory lists
     users = std::list<Users*>();
     chatHistory = std::list<std::string>();
@@ -19,7 +19,7 @@ void CtrlCat::registerUser(Users& user) {
 void CtrlCat::sendMessage(std::string mess, Users& fromUser) {
     for (Users* u : this->users) {
         if (u != &fromUser) {
-            u->receiveMessage(mess, fromUser, this);
+            u->receiveMessage(mess, &fromUser, this);
         }
     }
 }

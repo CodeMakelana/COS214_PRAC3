@@ -1,6 +1,6 @@
 #include "Dogorithm.h"
 
-Dogorithm::Dogorithm() {
+Dogorithm::Dogorithm() : ChatRoom("Dogorithm") {
     //initialize the users and chatHistory lists
     users = std::list<Users*>();
     chatHistory = std::list<std::string>();
@@ -19,7 +19,7 @@ void Dogorithm::registerUser(Users& user) {
 void Dogorithm::sendMessage(std::string mess, Users& fromUser) {
     for (Users* u : this->users) {
         if (u != &fromUser) {
-            u->receiveMessage(mess, fromUser, this);
+            u->receiveMessage(mess, &fromUser, this);
         }
     }
 }
