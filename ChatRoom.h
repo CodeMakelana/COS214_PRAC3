@@ -15,10 +15,10 @@ class ChatRoom {
 
     public :
     virtual ~ChatRoom() {}
-    virtual void registerUser (Users user) = 0;
-    virtual void sendMessage (string message, Users fromUser) = 0;
-    virtual void saveMessage (string message, Users fromUser) = 0;
-    virtual void removeUser (Users user) = 0;
+    virtual void registerUser (Users& user) = 0;
+    virtual void sendMessage (string message, Users& fromUser) = 0;
+    virtual void saveMessage (string message, Users& fromUser) = 0;
+    virtual void removeUser (Users& user) = 0;
 };
 
 #endif //CHATROOM_H
