@@ -2,6 +2,7 @@
 
 Users::Users(ChatRoom* chatroom, std::string name) {
     this->name = name;
+    std::cout << "User " << name << " is waiting to join a chatroom." << std::endl;
     this->chatrooms.push_back(chatroom);
     for (ChatRoom* cr : chatrooms) {
         cr->registerUser(*this);
