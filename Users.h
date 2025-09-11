@@ -18,6 +18,7 @@ class Users {
     virtual ~Users() {}
     void sendMessage(std::string message, ChatRoom* chatroom);
     void receiveMessage(std::string message, Users* fromUser, ChatRoom* chatroom);
+    std::string getName() const { return name; }
 };
 
 
