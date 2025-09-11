@@ -1,10 +1,13 @@
 #ifndef COLE_H
 #define COLE_H
 
+#include "Users.h"
+#include "CtrlCat.h"
 
-
-class Cole {
-
+class Cole : public Users {
+    public:
+    Cole(ChatRoom* chatroom, std::string name);
+    ~Cole();
 };
 
 
