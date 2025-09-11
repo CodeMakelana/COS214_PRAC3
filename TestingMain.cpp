@@ -1,5 +1,12 @@
 #include <iostream>
 
+#include "CtrlCat.h"
+#include "Dogorithm.h"
+#include "Cindy.h"
+#include "Ezio.h"
+#include "Cole.h"
+#include "ChatRoom.h"
+#include "Users.h"
 
 int main() {
     //Testing the mediator pattern.
