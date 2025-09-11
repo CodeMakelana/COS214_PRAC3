@@ -12,22 +12,22 @@ Dogorithm::~Dogorithm() {
     chatHistory.clear();
 }
 
-void Dogorithm::registerUser(User user) {
-    this.users.add(user);
+void Dogorithm::registerUser(Users& user) {
+    this->users.push_back(&user);
 }
 
-void Dogorithm::sendMessage(std::string mess, User fromUser) {
-    for (User u : this.users) {
-        if (u != fromUser) {
-            u.receiveMessage(mess, fromUser, this);
+void Dogorithm::sendMessage(std::string mess, Users& fromUser) {
+    for (Users* u : this->users) {
+        if (u != &fromUser) {
+            u->receiveMessage(mess, fromUser, this);
         }
     }
 }
 
-void Dogorithm::saveMessage(std::string mess, User fromUser) {
-    this.chatHistory.add(fromUser.getName() + ": " + mess);
+void Dogorithm::saveMessage(std::string mess, Users& fromUser) {
+    this->chatHistory.push_back(fromUser.getName() + ": " + mess);
 }
 
-void Dogorithm::removeUser(User user) {
-    this.users.remove(user);
+void Dogorithm::removeUser(Users& user) {
+    this->users.remove(&user);
 }
