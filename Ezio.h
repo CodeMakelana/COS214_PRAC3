@@ -2,7 +2,7 @@
 #define EZIO_H
 
 #include "Users.h"
-#include "Dogorithm.h"
+#include "ChatRoom.h"
 
 class Ezio : public Users {
     public:

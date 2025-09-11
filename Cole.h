@@ -2,7 +2,7 @@
 #define COLE_H
 
 #include "Users.h"
-#include "CtrlCat.h"
+#include "ChatRoom.h"
 
 class Cole : public Users {
     public:
