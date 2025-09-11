@@ -12,22 +12,22 @@ CtrlCat::~CtrlCat() {
     chatHistory.clear();
 }
 
-void CtrlCat::registerUser(User user) {
-    this.users.add(user);
+void CtrlCat::registerUser(Users& user) {
+    this->users.push_back(&user);
 }
 
-void CtrlCat::sendMessage(std::string mess, User fromUser) {
-    for (User u : this.users) {
-        if (u != fromUser) {
-            u.receiveMessage(mess, fromUser, this);
+void CtrlCat::sendMessage(std::string mess, Users& fromUser) {
+    for (Users* u : this->users) {
+        if (u != &fromUser) {
+            u->receiveMessage(mess, fromUser, this);
         }
     }
 }
 
-void CtrlCat::saveMessage(std::string mess, User fromUser) {
-    this.chatHistory.add(fromUser.getName() + ": " + mess);
+void CtrlCat::saveMessage(std::string mess, Users& fromUser) {
+    this->chatHistory.push_back(fromUser.getName() + ": " + mess);
 }
 
-void CtrlCat::removeUser(User user) {
-    this.users.remove(user);
+void CtrlCat::removeUser(Users& user) {
+    this->users.remove(&user);
 }
