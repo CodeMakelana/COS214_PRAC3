@@ -1,16 +1,28 @@
 #include <iostream>
 
-// TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+
 int main() {
-    // TIP Press <shortcut actionId="RenameElement"/> when your caret is at the <b>lang</b> variable name to see how CLion can help you rename it.
-    auto lang = "C++";
-    std::cout << "Hello and welcome to " << lang << "!\n";
+    //Testing the mediator pattern.
 
-    for (int i = 1; i <= 5; i++) {
-        // TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-        std::cout << "i = " << i << std::endl;
-    }
+    //create the chatrooms
 
+    ChatRoom* Catroom = new CtrlCat();
+    ChatRoom* DogRoom = new Dogorithm();
+
+    //Create users
+    Cindy* cindy = new Cindy(Catroom, "Cindy");
+    cindy->joinChatRoom(Dogroom); //since Cindy is aprt of 2 chatrooms
+
+    //users in single rooms
+    Ezio* ezio = new Ezio(DogRoom, "Ezio");
+    Cole* cole = new Cindy(Catroom, "Cole");
+
+    //egister the users (join them in the chatrooms)
+    Catroom->registerUser(cindy);
+    Catroom->registerUser(cole);
+    DogRoom->registerUser(ezio);
+
+    ezio->sendMessage("Hello", DogRoom);
     return 0;
-    // TIP See CLion help at <a href="https://www.jetbrains.com/help/clion/">jetbrains.com/help/clion/</a>. Also, you can try interactive lessons for CLion by selecting 'Help | Learn IDE Features' from the main menu.
+    
 }
