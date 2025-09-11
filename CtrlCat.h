@@ -6,7 +6,7 @@
 class CtrlCat : public ChatRoom {
     public :
     CtrlCat();
-    virt
+    ~CtrlCat();
      void registerUser (Users user);
      void sendMessage (string message, Users fromUser);
      void saveMessage (string message, Users fromUser);
