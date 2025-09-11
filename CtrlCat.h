@@ -2,6 +2,7 @@
 #define CTRLCAT_H
 
 #include "ChatRoom.h"
+#include "Users.h"
 #include <string>
 
 class CtrlCat : public ChatRoom {

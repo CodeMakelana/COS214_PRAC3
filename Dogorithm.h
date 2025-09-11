@@ -2,6 +2,7 @@
 #define DOGORITHM_H
 
 #include "ChatRoom.h"
+#include "Users.h"
 #include <string>
 
 class Dogorithm : public ChatRoom {
