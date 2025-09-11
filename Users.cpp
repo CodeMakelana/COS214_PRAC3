@@ -20,6 +20,6 @@ void Users::sendMessage(std::string message, ChatRoom* chatroom) {
 }
 
 void Users::receiveMessage(std::string message, Users* fromUser, ChatRoom* chatroom) {
-    std::cout << this->name<< " in chatroo" << " received a message from " << fromUser->name << " in chatroom: " << message << std::endl;
+    std::cout << this->name<< " in chatroom "<< chatroom->getName() << " received a message from " << fromUser->name << " in chatroom " << chatroom->getName() << ": " << message << std::endl;
     chatroom->saveMessage(message, *fromUser);
 }
