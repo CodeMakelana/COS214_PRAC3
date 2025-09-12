@@ -7,6 +7,6 @@ LogMessageCommand::LogMessageCommand(ChatRoom* room, Users* fromUser, const std:
 }
 
 void LogMessageCommand::execute() {
-    //Uses chatRoom to 
+    //Uses chatRoom to save the messages
     room->saveMessage(message, fromUser);
 }
