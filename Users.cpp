@@ -15,11 +15,11 @@ Users::~Users() {
     }
 }
 
-void Users::sendMessage(std::string message, ChatRoom* chatroom) {
+void Users::send(std::string message, ChatRoom* chatroom) {
     chatroom->sendMessage(message, *this);
 }
 
-void Users::receiveMessage(std::string message, Users* fromUser, ChatRoom* chatroom) {
+void Users::receive(std::string message, Users* fromUser, ChatRoom* chatroom) {
     std::cout << this->name<< " in chatroom "<< chatroom->getName() << " received a message from " << fromUser->name << " in chatroom " << chatroom->getName() << ": " << message << std::endl;
     chatroom->saveMessage(message, *fromUser);
 }
