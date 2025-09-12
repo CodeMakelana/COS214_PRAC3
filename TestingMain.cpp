@@ -29,10 +29,10 @@ int main() {
     // Catroom->registerUser(*cole);
     // DogRoom->registerUser(*ezio);
 
-    ezio->sendMessage("Hello", DogRoom);
-    cole->sendMessage("My cat is the best", Catroom);
-    cindy->sendMessage("I love dogs", DogRoom);
-    cindy->sendMessage("I love cats", Catroom);
+    ezio->send("Hello", DogRoom);
+    cole->send("My cat is the best", Catroom);
+    cindy->send("I love dogs", DogRoom);
+    cindy->send("I love cats", Catroom);
     return 0;
     
 }
