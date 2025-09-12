@@ -3,11 +3,9 @@
 
 #include <string>
 #include <vector>
-
 #include <iostream>
 #include "ChatRoom.h"
-
-class Command; // Forward declaration of Command class
+#include "Command.h"
 
 class Users {
     protected : 
