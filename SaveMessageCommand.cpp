@@ -1,12 +1,12 @@
-#include "LogMessageCommand.h"
+#include "SaveMessageCommand.h"
 
-LogMessageCommand::LogMessageCommand(ChatRoom* room, Users* fromUser, const std::string& message) {
+SaveMessageCommand::SaveMessageCommand(ChatRoom* room, Users* fromUser, const std::string& message) {
     this->room = room;
     this->fromUser = fromUser;
     this->message = message;
 }
 
-void LogMessageCommand::execute() {
+void SaveMessageCommand::execute() {
     //Uses chatRoom to save the messages
     room->saveMessage(message, fromUser);
 }
