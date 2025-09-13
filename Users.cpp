@@ -36,3 +36,11 @@ void Users::receive(std::string message, Users* fromUser, ChatRoom* chatroom) {
 void Users::addCommand(Command* command) {
     this->commands.push_back(command);
 }
+
+void Users::executeAll() {
+    for (Command cmd : commands) {
+        cmd->execute();
+        delete cmd;
+    }
+    commands.clear();
+}
