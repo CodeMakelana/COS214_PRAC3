@@ -38,7 +38,7 @@ void Users::addCommand(Command* command) {
 }
 
 void Users::executeAll() {
-    for (Command cmd : commands) {
+    for (Command* cmd : commands) {
         cmd->execute();
         delete cmd;
     }
