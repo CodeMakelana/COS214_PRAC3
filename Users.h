@@ -6,10 +6,10 @@
 #include <list>
 #include <iostream>
 #include "ChatRoom.h"
-#include "Command.h"    
-#include "Strategy.h"
+#include "Command.h"  
+#include "Strategy.h"   
 
-class Command; // Forward declaration
+class Command;
 
 class Users {
     protected : 
