@@ -3,30 +3,58 @@
 
 #include <string>
 #include <vector>
-
+#include <list>
 #include <iostream>
 #include "ChatRoom.h"
+#include "Command.h"  
+#include "Strategy.h" // Include the strategy header
+using namespace std;
 
-class Command; // Forward declaration of Command class
+class Command;
 
 class Users {
-    protected : 
-    std::string name;
+    protected: 
+    string name;
     //vector of chatrooms callled chatrooms
-    std::vector<ChatRoom*> chatrooms;
+    vector<ChatRoom*> chatrooms;
     //vector of commands called commands
-    std::vector<Command*> commands;
-
-    public :
-    Users(ChatRoom* chatroom, std::string name);
+    vector<Command*> commands;
+    MessageFormattingStrategy* messageStrategy; // Strategy for message formatting
+    public:
+    Users(ChatRoom* chatroom, string name);
     virtual ~Users();
-    void send(std::string message, ChatRoom* chatroom);
-    void receive(std::string message, Users* fromUser, ChatRoom* chatroom);
-    std::string getName() const { return name; }
+    void send(string message, ChatRoom* chatroom);
+    void receive(string message, Users* fromUser, ChatRoom* chatroom);
+    string getName() const { return name; }
     void addCommand(Command* command);
-    void execuiteAll();
+    void executeAll();
+
+    // Strategy pattern methods
+    void setMessageStrategy(MessageFormattingStrategy* strategy);
+    MessageFormattingStrategy* getMessageStrategy();
+
+    string getName() { return name; }
 };
 
+class Ezio : public Users {
+    public:
+    Ezio(ChatRoom* chatroom, string name);
+    ~Ezio();
+};
+
+class Cole : public Users {
+    public:
+    Cole(ChatRoom* chatroom, string name);
+    ~Cole();
+};
+
+class Cindy : public Users{
+    public :
+    Cindy(ChatRoom* chatroom, std::string name);
+    ~Cindy();
+    void joinRoom(ChatRoom* chatroom);
+
+};
 
 
 #endif //USERS_H
