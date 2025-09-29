@@ -8,5 +8,5 @@ SaveMessageCommand::SaveMessageCommand(ChatRoom* room, Users* fromUser, const st
 
 void SaveMessageCommand::execute() {
     //Uses chatRoom to save the messages
-    room->saveMessage(message, fromUser);
+    room->saveMessage(message, *fromUser);
 }
