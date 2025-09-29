@@ -1,3 +1,10 @@
+/**
+ * @file Users.h
+ * @brief 
+ * @author Tshepiso Makelana
+ * @author Arran Lamond
+ * @date 2025-09-29
+ */
 #ifndef USERS_H
 #define USERS_H
 

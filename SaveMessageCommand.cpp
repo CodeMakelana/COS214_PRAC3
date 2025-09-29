@@ -1,3 +1,10 @@
+/**
+ * @file SaveMessageCommand.cpp
+ * @brief 
+ * @author Tshepiso Makelana
+ * @author Arran Lamond
+ * @date 2025-09-29
+ */
 #include "SaveMessageCommand.h"
 
 SaveMessageCommand::SaveMessageCommand(ChatRoom* room, Users* fromUser, const std::string& message) {

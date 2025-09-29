@@ -1,3 +1,10 @@
+/**
+ * @file Cindy.cpp
+ * @brief 
+ * @author Tshepiso Makelana
+ * @author Arran Lamond
+ * @date 2025-09-29
+ */
 #include "Cindy.h"
 
 Cindy::Cindy(ChatRoom* chatroom, std::string name) 

@@ -1,3 +1,10 @@
+/**
+ * @file SendMessageCommand.cpp
+ * @brief 
+ * @author Tshepiso Makelana
+ * @author Arran Lamond
+ * @date 2025-09-29
+ */
 #ifndef SENDMESSAGECOMMAND_H
 #define SENDMESSAGECOMMAND_H
 

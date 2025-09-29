@@ -1,3 +1,10 @@
+/**
+ * @file Cole.h
+ * @brief 
+ * @author Tshepiso Makelana
+ * @author Arran Lamond
+ * @date 2025-09-29
+ */
 #ifndef COLE_H
 #define COLE_H
 

@@ -1,3 +1,10 @@
+/**
+ * @file Ezio.h
+ * @brief 
+ * @author Tshepiso Makelana
+ * @author Arran Lamond
+ * @date 2025-09-29
+ */
 #ifndef EZIO_H
 #define EZIO_H
 

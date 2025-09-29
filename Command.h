@@ -1,3 +1,11 @@
+/**
+ * @file Command.h
+ * @brief 
+ * @author Tshepiso Makelana
+ * @author Arran Lamond  
+ * @date 2025-09-29
+ */
+
 #ifndef COMMAND_H
 #define COMMAND_H
 

@@ -1,3 +1,10 @@
+/**
+ * @file CtrlCat.h
+ * @brief 
+ * @author Tshepiso Makelana
+ * @author Arran Lamond
+ * @date 2025-09-29
+ */
 #ifndef CTRLCAT_H
 #define CTRLCAT_H
 

@@ -1,3 +1,10 @@
+/**
+ * @file Strategy.h
+ * @brief 
+ * @author Tshepiso Makelana
+ * @author Arran Lamond
+ * @date 2025-09-29
+ */
 #ifndef MESSAGEFORMATTINGSTRATEGY_H
 #define MESSAGEFORMATTINGSTRATEGY_H
 

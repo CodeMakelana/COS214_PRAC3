@@ -1,3 +1,10 @@
+/**
+ * @file Dogorithm.h
+ * @brief 
+ * @author Tshepiso Makelana
+ * @author Arran Lamond
+ * @date 2025-09-29
+ */
 #ifndef DOGORITHM_H
 #define DOGORITHM_H
 

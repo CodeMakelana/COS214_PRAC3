@@ -1,3 +1,10 @@
+/**
+ * @file Dogorithm.cpp
+ * @brief 
+ * @author Tshepiso Makelana
+ * @author Arran Lamond
+ * @date 2025-09-29
+ */
 #include "Dogorithm.h"
 
 Dogorithm::Dogorithm() : ChatRoom("Dogorithm") {

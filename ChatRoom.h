@@ -1,3 +1,11 @@
+/**
+ * @file ChatRoom.h
+ * @brief Header for ChatRoom abstract base class (Mediator pattern)
+ * @author Tshepiso Makelana
+ * @author Arran Lamond  
+ * @date 2025-09-29
+ */
+
 #ifndef CHATROOM_H
 #define CHATROOM_H
 

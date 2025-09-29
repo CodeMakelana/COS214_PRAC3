@@ -1,3 +1,10 @@
+/**
+ * @file SendMessageCommand.cpp
+ * @brief 
+ * @author Tshepiso Makelana
+ * @author Arran Lamond
+ * @date 2025-09-29
+ */
 #include "SendMessageCommand.h"
 
 SendMessageCommand::SendMessageCommand(ChatRoom* room, Users* fromUser, const std::string& message) {
