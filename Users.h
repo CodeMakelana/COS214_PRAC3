@@ -9,6 +9,8 @@
 #include "Command.h"    
 #include "Strategy.h"
 
+class Command; // Forward declaration
+
 class Users {
     protected : 
     std::string name;
