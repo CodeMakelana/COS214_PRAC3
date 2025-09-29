@@ -25,7 +25,7 @@ class Users {
     void receive(std::string message, Users* fromUser, ChatRoom* chatroom);
     std::string getName() const { return name; }
     void addCommand(Command* command);
-    void execuiteAll();
+    void executeAll();
 
     // Strategy pattern methods
     void setMessageStrategy(MessageFormattingStrategy* strategy);
