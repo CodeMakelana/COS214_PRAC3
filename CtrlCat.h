@@ -3,7 +3,7 @@
 
 #include "ChatRoom.h"
 #include "Users.h"
-#include  "iterator.h"
+#include  "Iterator.h"
 #include <string>
 
 class CtrlCat : public ChatRoom {

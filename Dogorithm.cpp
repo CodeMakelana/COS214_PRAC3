@@ -19,7 +19,7 @@ void Dogorithm::registerUser(Users& user) {
 void Dogorithm::sendMessage(std::string mess, Users& fromUser) {
     for (Users* u : this->users) {
         if (u != &fromUser) {
-            u->receiveMessage(mess, &fromUser, this);
+            u->receive(mess, &fromUser, this);
         }
     }
 }
