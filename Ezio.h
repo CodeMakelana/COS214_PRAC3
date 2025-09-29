@@ -10,6 +10,4 @@ class Ezio : public Users {
     ~Ezio();
 };
 
-
-
 #endif //EZIO_H
