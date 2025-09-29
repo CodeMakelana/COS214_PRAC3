@@ -1,7 +1,7 @@
 #include "Users.h"
 #include "SendMessageCommand.h"
 #include "SaveMessageCommand.h"
-#include "Strategy.h"
+// #include "Strategy.h"
 
 Users::Users(ChatRoom* chatroom, std::string name) {
     this->name = name;
