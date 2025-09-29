@@ -31,7 +31,6 @@ class Users {
     void setMessageStrategy(MessageFormattingStrategy* strategy);
     MessageFormattingStrategy* getMessageStrategy();
 
-    std::string getName() { return name; }
 };
 
 #endif //USERS_H
