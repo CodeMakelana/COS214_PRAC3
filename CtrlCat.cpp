@@ -31,3 +31,11 @@ void CtrlCat::saveMessage(std::string mess, Users& fromUser) {
 void CtrlCat::removeUser(Users& user) {
     this->users.remove(&user);
 }
+
+Iterator<Users*>* CtrlCat::createUsersIterator() {
+    return new UsersIterator<Users>(users);  // Pass the class type, not pointer type
+}
+
+Iterator<std::string*>* CtrlCat::createChatHistoryIterator() {
+    return new ChatHistoryIterator(chatHistory);  // FIXED: No template syntax
+}

@@ -3,6 +3,7 @@
 
 #include "ChatRoom.h"
 #include "Users.h"
+#include "Iterator.h"
 #include <string>
 
 class Dogorithm : public ChatRoom {
@@ -13,8 +14,9 @@ class Dogorithm : public ChatRoom {
     void sendMessage (std::string message, Users& fromUser);
     void saveMessage (std::string message, Users& fromUser);
     void removeUser (Users& user);
+
+    Iterator<Users*>* createUsersIterator() override;
+    Iterator<std::string*>* createChatHistoryIterator() override;
 };
-
-
 
 #endif //DOGORITHM_H

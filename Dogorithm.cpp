@@ -31,3 +31,11 @@ void Dogorithm::saveMessage(std::string mess, Users& fromUser) {
 void Dogorithm::removeUser(Users& user) {
     this->users.remove(&user);
 }
+
+Iterator<Users*>* Dogorithm::createUsersIterator() {
+    return new UsersIterator<Users>(users);  // Pass the class type, not pointer type
+}
+
+Iterator<std::string*>* Dogorithm::createChatHistoryIterator() {
+    return new ChatHistoryIterator(chatHistory);  // FIXED: No template syntax
+}
