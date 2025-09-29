@@ -8,6 +8,7 @@
 #include <iostream>
 
 class Users;
+template<typename T> class Iterator;
 
 class ChatRoom {
 protected:
@@ -24,6 +25,10 @@ public:
     virtual void sendMessage(std::string message, Users& fromUser) = 0;
     virtual void saveMessage(std::string message, Users& fromUser) = 0;
     virtual void removeUser(Users& user) = 0;
+
+    // Iterator factory methods
+    virtual Iterator<Users*>* createUsersIterator() = 0;
+    virtual Iterator<std::string*>* createChatHistoryIterator() = 0;
 };
 
 #endif //CHATROOM_H
