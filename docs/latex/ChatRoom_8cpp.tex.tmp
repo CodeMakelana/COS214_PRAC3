@@ -1,0 +1,23 @@
+\hypertarget{ChatRoom_8cpp}{}\doxysection{Chat\+Room.\+cpp File Reference}
+\label{ChatRoom_8cpp}\index{ChatRoom.cpp@{ChatRoom.cpp}}
+
+
+Implementation file for \mbox{\hyperlink{classChatRoom}{Chat\+Room}} abstract class.  
+
+
+{\ttfamily \#include \char`\"{}Chat\+Room.\+h\char`\"{}}\newline
+Include dependency graph for Chat\+Room.\+cpp\+:
+% FIG 0
+
+
+\doxysubsection{Detailed Description}
+Implementation file for \mbox{\hyperlink{classChatRoom}{Chat\+Room}} abstract class. 
+
+\begin{DoxyAuthor}{Author}
+Tshepiso Makelana 
+
+Arran Lamond 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+2025-\/09-\/29 
+\end{DoxyDate}

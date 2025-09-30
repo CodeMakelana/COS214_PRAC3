@@ -1,0 +1,81 @@
+\hypertarget{classPlainTextStrategy}{}\doxysection{Plain\+Text\+Strategy Class Reference}
+\label{classPlainTextStrategy}\index{PlainTextStrategy@{PlainTextStrategy}}
+
+
+Plain text formatting strategy Formats messages as\+: \char`\"{}\+Username\+: message\char`\"{}.  
+
+
+
+
+{\ttfamily \#include $<$Strategy.\+h$>$}
+
+
+
+Inherits \mbox{\hyperlink{classMessageFormattingStrategy}{Message\+Formatting\+Strategy}}.
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classPlainTextStrategy_aa8e11ef3265276992d8326fca6c4992c}\label{classPlainTextStrategy_aa8e11ef3265276992d8326fca6c4992c}} 
+\mbox{\hyperlink{classPlainTextStrategy_aa8e11ef3265276992d8326fca6c4992c}{Plain\+Text\+Strategy}} ()
+\begin{DoxyCompactList}\small\item\em Constructs a new \mbox{\hyperlink{classPlainTextStrategy}{Plain\+Text\+Strategy}} object. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classPlainTextStrategy_a458c77134d9cd98de85a26bcc9b74fa5}\label{classPlainTextStrategy_a458c77134d9cd98de85a26bcc9b74fa5}} 
+virtual \mbox{\hyperlink{classPlainTextStrategy_a458c77134d9cd98de85a26bcc9b74fa5}{$\sim$\+Plain\+Text\+Strategy}} ()
+\begin{DoxyCompactList}\small\item\em Destroys the \mbox{\hyperlink{classPlainTextStrategy}{Plain\+Text\+Strategy}} object. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classPlainTextStrategy_ad773677d1ac85e393e816bc8c360aae2}{format\+Message}} (const std\+::string \&message, const \mbox{\hyperlink{classUsers}{Users}} \&from\+User) override
+\begin{DoxyCompactList}\small\item\em Formats message as plain text. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classPlainTextStrategy_a7d63ce9f6758a4f0651ebba37c7610c9}{get\+Strategy\+Name}} () const override
+\begin{DoxyCompactList}\small\item\em Gets the strategy name. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Plain text formatting strategy Formats messages as\+: \char`\"{}\+Username\+: message\char`\"{}. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPlainTextStrategy_ad773677d1ac85e393e816bc8c360aae2}\label{classPlainTextStrategy_ad773677d1ac85e393e816bc8c360aae2}} 
+\index{PlainTextStrategy@{PlainTextStrategy}!formatMessage@{formatMessage}}
+\index{formatMessage@{formatMessage}!PlainTextStrategy@{PlainTextStrategy}}
+\doxysubsubsection{\texorpdfstring{formatMessage()}{formatMessage()}}
+{\footnotesize\ttfamily std\+::string Plain\+Text\+Strategy\+::format\+Message (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{message,  }\item[{const \mbox{\hyperlink{classUsers}{Users}} \&}]{from\+User }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Formats message as plain text. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em message} & The raw message content \\
+\hline
+{\em from\+User} & The user sending the message \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+std\+::string Formatted message \char`\"{}\+Username\+: message\char`\"{} 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classMessageFormattingStrategy_a9299dd8c29ddc530ee119c80793abae6}{Message\+Formatting\+Strategy}}.
+
+\mbox{\Hypertarget{classPlainTextStrategy_a7d63ce9f6758a4f0651ebba37c7610c9}\label{classPlainTextStrategy_a7d63ce9f6758a4f0651ebba37c7610c9}} 
+\index{PlainTextStrategy@{PlainTextStrategy}!getStrategyName@{getStrategyName}}
+\index{getStrategyName@{getStrategyName}!PlainTextStrategy@{PlainTextStrategy}}
+\doxysubsubsection{\texorpdfstring{getStrategyName()}{getStrategyName()}}
+{\footnotesize\ttfamily std\+::string Plain\+Text\+Strategy\+::get\+Strategy\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Gets the strategy name. 
+
+\begin{DoxyReturn}{Returns}
+std\+::string \char`\"{}\+Plain\+Text\char`\"{} 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classMessageFormattingStrategy_a761592e0269f8f97b0d2f213af3fd453}{Message\+Formatting\+Strategy}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{Strategy_8h}{Strategy.\+h}}\item 
+Startegy.\+cpp\end{DoxyCompactItemize}

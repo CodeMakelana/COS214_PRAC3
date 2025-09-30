@@ -1,0 +1,227 @@
+\hypertarget{classUsers}{}\doxysection{Users Class Reference}
+\label{classUsers}\index{Users@{Users}}
+
+
+Base class representing users in the Pet\+Space chat system \mbox{\hyperlink{classUsers}{Users}} can join multiple chat rooms, send/receive messages, and execute commands. Implements Strategy pattern for message formatting and \mbox{\hyperlink{classCommand}{Command}} pattern for action execution.  
+
+
+
+
+{\ttfamily \#include $<$Users.\+h$>$}
+
+
+
+Inherited by \mbox{\hyperlink{classCindy}{Cindy}}, \mbox{\hyperlink{classCole}{Cole}}, and \mbox{\hyperlink{classEzio}{Ezio}}.
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classUsers_a872e0c7454ca291139e4802986b37e92}{Users}} (\mbox{\hyperlink{classChatRoom}{Chat\+Room}} $\ast$chatroom, std\+::string \mbox{\hyperlink{classUsers_abfa55c64dfc5548eb796e163633404d2}{name}})
+\begin{DoxyCompactList}\small\item\em Constructor for \mbox{\hyperlink{classUsers}{Users}}. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{classUsers_a33ff9aadcaef989bf3c8570358f791f6}{$\sim$\+Users}} ()
+\begin{DoxyCompactList}\small\item\em Destructor for \mbox{\hyperlink{classUsers}{Users}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classUsers_ae7ea50d0389c097699d57acc45b49968}{send}} (std\+::string message, \mbox{\hyperlink{classChatRoom}{Chat\+Room}} $\ast$chatroom)
+\begin{DoxyCompactList}\small\item\em Sends a message to a specific chat room. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classUsers_adb168e4bb1580051102951d8608d176c}{receive}} (std\+::string message, \mbox{\hyperlink{classUsers}{Users}} $\ast$from\+User, \mbox{\hyperlink{classChatRoom}{Chat\+Room}} $\ast$chatroom)
+\begin{DoxyCompactList}\small\item\em Receives a message from another user. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classUsers_ad2371408cc7288e70dd57f20d2534835}{get\+Name}} () const
+\begin{DoxyCompactList}\small\item\em Gets the user\textquotesingle{}s name. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classUsers_afa792552c0c96c79946fdc72d65f5bca}{add\+Command}} (\mbox{\hyperlink{classCommand}{Command}} $\ast$command)
+\begin{DoxyCompactList}\small\item\em Adds a command to the execution queue. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classUsers_aabafaa656ae27340b904c083b70b2d97}{execute\+All}} ()
+\begin{DoxyCompactList}\small\item\em Executes all queued commands. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classUsers_a88231f58def3093a09b2cd2e08f62bb6}{set\+Message\+Strategy}} (\mbox{\hyperlink{classMessageFormattingStrategy}{Message\+Formatting\+Strategy}} $\ast$strategy)
+\begin{DoxyCompactList}\small\item\em Sets the message formatting strategy. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classMessageFormattingStrategy}{Message\+Formatting\+Strategy}} $\ast$ \mbox{\hyperlink{classUsers_adcfebaab688b258cba350ad38a225f1d}{get\+Message\+Strategy}} ()
+\begin{DoxyCompactList}\small\item\em Gets the current message formatting strategy. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classUsers_ad696f646f3bfa289909d4d7c9d21dba0}{join\+Chat\+Room}} (\mbox{\hyperlink{classChatRoom}{Chat\+Room}} $\ast$chatroom)
+\begin{DoxyCompactList}\small\item\em Allows user to join additional chat rooms. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classUsers_abfa55c64dfc5548eb796e163633404d2}\label{classUsers_abfa55c64dfc5548eb796e163633404d2}} 
+std\+::string \mbox{\hyperlink{classUsers_abfa55c64dfc5548eb796e163633404d2}{name}}
+\begin{DoxyCompactList}\small\item\em Name of the user. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classUsers_aa039ba8321717da8538376049be6ccf1}\label{classUsers_aa039ba8321717da8538376049be6ccf1}} 
+std\+::vector$<$ \mbox{\hyperlink{classChatRoom}{Chat\+Room}} $\ast$ $>$ \mbox{\hyperlink{classUsers_aa039ba8321717da8538376049be6ccf1}{chatrooms}}
+\begin{DoxyCompactList}\small\item\em List of chat rooms user has joined. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classUsers_a6f11611b7c2597362dfe6e55f6979e26}\label{classUsers_a6f11611b7c2597362dfe6e55f6979e26}} 
+std\+::vector$<$ \mbox{\hyperlink{classCommand}{Command}} $\ast$ $>$ \mbox{\hyperlink{classUsers_a6f11611b7c2597362dfe6e55f6979e26}{commands}}
+\begin{DoxyCompactList}\small\item\em Queue of commands to be executed. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classUsers_aa8e445f72c9033d0d9e206b4183ce0a2}\label{classUsers_aa8e445f72c9033d0d9e206b4183ce0a2}} 
+\mbox{\hyperlink{classMessageFormattingStrategy}{Message\+Formatting\+Strategy}} $\ast$ \mbox{\hyperlink{classUsers_aa8e445f72c9033d0d9e206b4183ce0a2}{message\+Strategy}}
+\begin{DoxyCompactList}\small\item\em Strategy for formatting messages. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Base class representing users in the Pet\+Space chat system \mbox{\hyperlink{classUsers}{Users}} can join multiple chat rooms, send/receive messages, and execute commands. Implements Strategy pattern for message formatting and \mbox{\hyperlink{classCommand}{Command}} pattern for action execution. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classUsers_a872e0c7454ca291139e4802986b37e92}\label{classUsers_a872e0c7454ca291139e4802986b37e92}} 
+\index{Users@{Users}!Users@{Users}}
+\index{Users@{Users}!Users@{Users}}
+\doxysubsubsection{\texorpdfstring{Users()}{Users()}}
+{\footnotesize\ttfamily Users\+::\+Users (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classChatRoom}{Chat\+Room}} $\ast$}]{chatroom,  }\item[{std\+::string}]{name }\end{DoxyParamCaption})}
+
+
+
+Constructor for \mbox{\hyperlink{classUsers}{Users}}. 
+
+Constructs a new \mbox{\hyperlink{classUsers}{Users}} object.
+
+
+\begin{DoxyParams}{Parameters}
+{\em chatroom} & Initial chat room to join \\
+\hline
+{\em name} & Name of the user \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classUsers_a33ff9aadcaef989bf3c8570358f791f6}\label{classUsers_a33ff9aadcaef989bf3c8570358f791f6}} 
+\index{Users@{Users}!````~Users@{$\sim$Users}}
+\index{````~Users@{$\sim$Users}!Users@{Users}}
+\doxysubsubsection{\texorpdfstring{$\sim$Users()}{~Users()}}
+{\footnotesize\ttfamily Users\+::$\sim$\+Users (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Destructor for \mbox{\hyperlink{classUsers}{Users}}. 
+
+Destroys the \mbox{\hyperlink{classUsers}{Users}} object and cleans up resources. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classUsers_afa792552c0c96c79946fdc72d65f5bca}\label{classUsers_afa792552c0c96c79946fdc72d65f5bca}} 
+\index{Users@{Users}!addCommand@{addCommand}}
+\index{addCommand@{addCommand}!Users@{Users}}
+\doxysubsubsection{\texorpdfstring{addCommand()}{addCommand()}}
+{\footnotesize\ttfamily void Users\+::add\+Command (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classCommand}{Command}} $\ast$}]{command }\end{DoxyParamCaption})}
+
+
+
+Adds a command to the execution queue. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em command} & Pointer to the command to add \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classUsers_aabafaa656ae27340b904c083b70b2d97}\label{classUsers_aabafaa656ae27340b904c083b70b2d97}} 
+\index{Users@{Users}!executeAll@{executeAll}}
+\index{executeAll@{executeAll}!Users@{Users}}
+\doxysubsubsection{\texorpdfstring{executeAll()}{executeAll()}}
+{\footnotesize\ttfamily void Users\+::execute\+All (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Executes all queued commands. 
+
+Executes all queued commands and cleans up. \mbox{\Hypertarget{classUsers_adcfebaab688b258cba350ad38a225f1d}\label{classUsers_adcfebaab688b258cba350ad38a225f1d}} 
+\index{Users@{Users}!getMessageStrategy@{getMessageStrategy}}
+\index{getMessageStrategy@{getMessageStrategy}!Users@{Users}}
+\doxysubsubsection{\texorpdfstring{getMessageStrategy()}{getMessageStrategy()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classMessageFormattingStrategy}{Message\+Formatting\+Strategy}} $\ast$ Users\+::get\+Message\+Strategy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gets the current message formatting strategy. 
+
+\begin{DoxyReturn}{Returns}
+Message\+Formatting\+Strategy$\ast$ Pointer to current strategy 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classUsers_ad2371408cc7288e70dd57f20d2534835}\label{classUsers_ad2371408cc7288e70dd57f20d2534835}} 
+\index{Users@{Users}!getName@{getName}}
+\index{getName@{getName}!Users@{Users}}
+\doxysubsubsection{\texorpdfstring{getName()}{getName()}}
+{\footnotesize\ttfamily std\+::string Users\+::get\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Gets the user\textquotesingle{}s name. 
+
+\begin{DoxyReturn}{Returns}
+std\+::string The name of the user 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classUsers_ad696f646f3bfa289909d4d7c9d21dba0}\label{classUsers_ad696f646f3bfa289909d4d7c9d21dba0}} 
+\index{Users@{Users}!joinChatRoom@{joinChatRoom}}
+\index{joinChatRoom@{joinChatRoom}!Users@{Users}}
+\doxysubsubsection{\texorpdfstring{joinChatRoom()}{joinChatRoom()}}
+{\footnotesize\ttfamily void Users\+::join\+Chat\+Room (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classChatRoom}{Chat\+Room}} $\ast$}]{chatroom }\end{DoxyParamCaption})}
+
+
+
+Allows user to join additional chat rooms. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em chatroom} & Pointer to the chat room to join \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+Enables participation in multiple chat rooms simultaneously
+\end{DoxyNote}
+
+\begin{DoxyParams}{Parameters}
+{\em chatroom} & Pointer to the chat room to join \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+Adds the chatroom to user\textquotesingle{}s list and registers them in that chatroom 
+\end{DoxyNote}
+\mbox{\Hypertarget{classUsers_adb168e4bb1580051102951d8608d176c}\label{classUsers_adb168e4bb1580051102951d8608d176c}} 
+\index{Users@{Users}!receive@{receive}}
+\index{receive@{receive}!Users@{Users}}
+\doxysubsubsection{\texorpdfstring{receive()}{receive()}}
+{\footnotesize\ttfamily void Users\+::receive (\begin{DoxyParamCaption}\item[{std\+::string}]{message,  }\item[{\mbox{\hyperlink{classUsers}{Users}} $\ast$}]{from\+User,  }\item[{\mbox{\hyperlink{classChatRoom}{Chat\+Room}} $\ast$}]{chatroom }\end{DoxyParamCaption})}
+
+
+
+Receives a message from another user. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em message} & The received message content \\
+\hline
+{\em from\+User} & Pointer to the user who sent the message \\
+\hline
+{\em chatroom} & Pointer to the chat room where message was sent \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classUsers_ae7ea50d0389c097699d57acc45b49968}\label{classUsers_ae7ea50d0389c097699d57acc45b49968}} 
+\index{Users@{Users}!send@{send}}
+\index{send@{send}!Users@{Users}}
+\doxysubsubsection{\texorpdfstring{send()}{send()}}
+{\footnotesize\ttfamily void Users\+::send (\begin{DoxyParamCaption}\item[{std\+::string}]{message,  }\item[{\mbox{\hyperlink{classChatRoom}{Chat\+Room}} $\ast$}]{chatroom }\end{DoxyParamCaption})}
+
+
+
+Sends a message to a specific chat room. 
+
+Sends a message to a chat room using \mbox{\hyperlink{classCommand}{Command}} pattern.
+
+
+\begin{DoxyParams}{Parameters}
+{\em message} & The message content to send \\
+\hline
+{\em chatroom} & Pointer to the target chat room \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classUsers_a88231f58def3093a09b2cd2e08f62bb6}\label{classUsers_a88231f58def3093a09b2cd2e08f62bb6}} 
+\index{Users@{Users}!setMessageStrategy@{setMessageStrategy}}
+\index{setMessageStrategy@{setMessageStrategy}!Users@{Users}}
+\doxysubsubsection{\texorpdfstring{setMessageStrategy()}{setMessageStrategy()}}
+{\footnotesize\ttfamily void Users\+::set\+Message\+Strategy (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classMessageFormattingStrategy}{Message\+Formatting\+Strategy}} $\ast$}]{strategy }\end{DoxyParamCaption})}
+
+
+
+Sets the message formatting strategy. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em strategy} & Pointer to the new formatting strategy \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{Users_8h}{Users.\+h}}\item 
+\mbox{\hyperlink{Users_8cpp}{Users.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,128 @@
+\hypertarget{classChatHistoryIterator}{}\doxysection{Chat\+History\+Iterator Class Reference}
+\label{classChatHistoryIterator}\index{ChatHistoryIterator@{ChatHistoryIterator}}
+
+
+Concrete iterator for chat message history Iterates over a list of chat message strings using STL list iterators.  
+
+
+
+
+{\ttfamily \#include $<$Iterator.\+h$>$}
+
+
+
+Inherits \mbox{\hyperlink{classIterator}{Iterator$<$ std\+::string $\ast$ $>$}}.
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classChatHistoryIterator_a10df3b3c13fb6d7861884254f74fb67c}{Chat\+History\+Iterator}} (std\+::list$<$ std\+::string $>$ \&chat\+History\+List)
+\begin{DoxyCompactList}\small\item\em Constructs iterator for chat history. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classChatHistoryIterator_a61eab1e281768de3b154d4f9bc83f35e}\label{classChatHistoryIterator_a61eab1e281768de3b154d4f9bc83f35e}} 
+\mbox{\hyperlink{classChatHistoryIterator_a61eab1e281768de3b154d4f9bc83f35e}{$\sim$\+Chat\+History\+Iterator}} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classChatHistoryIterator_ae9dec32d60406e69d0f6f60c9d745df7}{first}} () override
+\begin{DoxyCompactList}\small\item\em Moves iterator to first element. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classChatHistoryIterator_a98fa07f132e9b38ccb21d7cf4d3d9138}{next}} () override
+\begin{DoxyCompactList}\small\item\em Moves iterator to next element. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classChatHistoryIterator_aee611df95153ef09c2820c78b6bc2098}{is\+Done}} () override
+\begin{DoxyCompactList}\small\item\em Checks if iteration is complete. \end{DoxyCompactList}\item 
+std\+::string $\ast$ \mbox{\hyperlink{classChatHistoryIterator_accddb0e78d92da64a4474fb73c96504a}{current\+Item}} () override
+\begin{DoxyCompactList}\small\item\em Gets current message. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Concrete iterator for chat message history Iterates over a list of chat message strings using STL list iterators. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classChatHistoryIterator_a10df3b3c13fb6d7861884254f74fb67c}\label{classChatHistoryIterator_a10df3b3c13fb6d7861884254f74fb67c}} 
+\index{ChatHistoryIterator@{ChatHistoryIterator}!ChatHistoryIterator@{ChatHistoryIterator}}
+\index{ChatHistoryIterator@{ChatHistoryIterator}!ChatHistoryIterator@{ChatHistoryIterator}}
+\doxysubsubsection{\texorpdfstring{ChatHistoryIterator()}{ChatHistoryIterator()}}
+{\footnotesize\ttfamily Chat\+History\+Iterator\+::\+Chat\+History\+Iterator (\begin{DoxyParamCaption}\item[{std\+::list$<$ std\+::string $>$ \&}]{chat\+History\+List }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructs iterator for chat history. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em chat\+History\+List} & List of messages to iterate over \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classChatHistoryIterator_accddb0e78d92da64a4474fb73c96504a}\label{classChatHistoryIterator_accddb0e78d92da64a4474fb73c96504a}} 
+\index{ChatHistoryIterator@{ChatHistoryIterator}!currentItem@{currentItem}}
+\index{currentItem@{currentItem}!ChatHistoryIterator@{ChatHistoryIterator}}
+\doxysubsubsection{\texorpdfstring{currentItem()}{currentItem()}}
+{\footnotesize\ttfamily std\+::string$\ast$ Chat\+History\+Iterator\+::current\+Item (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Gets current message. 
+
+\begin{DoxyReturn}{Returns}
+std\+::string$\ast$ Pointer to current message, nullptr if done 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classIterator_a1fce5bc9b2218407b5cedf2a0ba3131b}{Iterator$<$ std\+::string $\ast$ $>$}}.
+
+\mbox{\Hypertarget{classChatHistoryIterator_ae9dec32d60406e69d0f6f60c9d745df7}\label{classChatHistoryIterator_ae9dec32d60406e69d0f6f60c9d745df7}} 
+\index{ChatHistoryIterator@{ChatHistoryIterator}!first@{first}}
+\index{first@{first}!ChatHistoryIterator@{ChatHistoryIterator}}
+\doxysubsubsection{\texorpdfstring{first()}{first()}}
+{\footnotesize\ttfamily void Chat\+History\+Iterator\+::first (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Moves iterator to first element. 
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classIterator_a6f13cc79a1574086c63ce4ddba1d3d9f}{Iterator$<$ std\+::string $\ast$ $>$}}.
+
+\mbox{\Hypertarget{classChatHistoryIterator_aee611df95153ef09c2820c78b6bc2098}\label{classChatHistoryIterator_aee611df95153ef09c2820c78b6bc2098}} 
+\index{ChatHistoryIterator@{ChatHistoryIterator}!isDone@{isDone}}
+\index{isDone@{isDone}!ChatHistoryIterator@{ChatHistoryIterator}}
+\doxysubsubsection{\texorpdfstring{isDone()}{isDone()}}
+{\footnotesize\ttfamily bool Chat\+History\+Iterator\+::is\+Done (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Checks if iteration is complete. 
+
+\begin{DoxyReturn}{Returns}
+bool True if at end, false otherwise 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classIterator_a8e7b414c641f4f0838ff8bd6ba954b7a}{Iterator$<$ std\+::string $\ast$ $>$}}.
+
+\mbox{\Hypertarget{classChatHistoryIterator_a98fa07f132e9b38ccb21d7cf4d3d9138}\label{classChatHistoryIterator_a98fa07f132e9b38ccb21d7cf4d3d9138}} 
+\index{ChatHistoryIterator@{ChatHistoryIterator}!next@{next}}
+\index{next@{next}!ChatHistoryIterator@{ChatHistoryIterator}}
+\doxysubsubsection{\texorpdfstring{next()}{next()}}
+{\footnotesize\ttfamily void Chat\+History\+Iterator\+::next (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Moves iterator to next element. 
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classIterator_a94a7b0c50676cd9ee924eddece41d8d4}{Iterator$<$ std\+::string $\ast$ $>$}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{Iterator_8h}{Iterator.\+h}}\end{DoxyCompactItemize}

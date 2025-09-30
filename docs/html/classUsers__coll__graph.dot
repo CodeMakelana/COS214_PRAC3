@@ -1,0 +1,9 @@
+digraph "Users"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="Users",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Base class representing users in the PetSpace chat system Users can join multiple chat rooms,..."];
+  Node2 -> Node1 [dir="back",color="darkorchid3",fontsize="10",style="dashed",label=" messageStrategy" ,fontname="Helvetica"];
+  Node2 [label="MessageFormattingStrategy",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classMessageFormattingStrategy.html",tooltip="Abstract strategy interface for message formatting Defines the contract for different message formatt..."];
+}

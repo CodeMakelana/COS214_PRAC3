@@ -1,0 +1,84 @@
+\hypertarget{classRichTextStrategy}{}\doxysection{Rich\+Text\+Strategy Class Reference}
+\label{classRichTextStrategy}\index{RichTextStrategy@{RichTextStrategy}}
+
+
+Rich text formatting strategy Formats messages as\+: \char`\"{}$\ast$$\ast$\+Username$\ast$$\ast$ (online)\+: message\char`\"{} Note\+: Uses simple formatting due to library restrictions.  
+
+
+
+
+{\ttfamily \#include $<$Strategy.\+h$>$}
+
+
+
+Inherits \mbox{\hyperlink{classMessageFormattingStrategy}{Message\+Formatting\+Strategy}}.
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classRichTextStrategy_ac20d64db52ee178b509483bfb92b59de}\label{classRichTextStrategy_ac20d64db52ee178b509483bfb92b59de}} 
+\mbox{\hyperlink{classRichTextStrategy_ac20d64db52ee178b509483bfb92b59de}{Rich\+Text\+Strategy}} ()
+\begin{DoxyCompactList}\small\item\em Constructs a new \mbox{\hyperlink{classRichTextStrategy}{Rich\+Text\+Strategy}} object. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classRichTextStrategy_aaacdbdbbef8a71660dcdd0b733f1c4fe}\label{classRichTextStrategy_aaacdbdbbef8a71660dcdd0b733f1c4fe}} 
+virtual \mbox{\hyperlink{classRichTextStrategy_aaacdbdbbef8a71660dcdd0b733f1c4fe}{$\sim$\+Rich\+Text\+Strategy}} ()
+\begin{DoxyCompactList}\small\item\em Destroys the \mbox{\hyperlink{classRichTextStrategy}{Rich\+Text\+Strategy}} object. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classRichTextStrategy_a0baf14d66465f108bf3f66e23a0056dd}{format\+Message}} (const std\+::string \&message, const \mbox{\hyperlink{classUsers}{Users}} \&from\+User) override
+\begin{DoxyCompactList}\small\item\em Formats message with rich text styling. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classRichTextStrategy_a4451a0c949039c1d079472ddfd8dd353}{get\+Strategy\+Name}} () const override
+\begin{DoxyCompactList}\small\item\em Gets the strategy name. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Rich text formatting strategy Formats messages as\+: \char`\"{}$\ast$$\ast$\+Username$\ast$$\ast$ (online)\+: message\char`\"{} Note\+: Uses simple formatting due to library restrictions. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classRichTextStrategy_a0baf14d66465f108bf3f66e23a0056dd}\label{classRichTextStrategy_a0baf14d66465f108bf3f66e23a0056dd}} 
+\index{RichTextStrategy@{RichTextStrategy}!formatMessage@{formatMessage}}
+\index{formatMessage@{formatMessage}!RichTextStrategy@{RichTextStrategy}}
+\doxysubsubsection{\texorpdfstring{formatMessage()}{formatMessage()}}
+{\footnotesize\ttfamily std\+::string Rich\+Text\+Strategy\+::format\+Message (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{message,  }\item[{const \mbox{\hyperlink{classUsers}{Users}} \&}]{from\+User }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Formats message with rich text styling. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em message} & The raw message content \\
+\hline
+{\em from\+User} & The user sending the message \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+std\+::string Formatted message \char`\"{}$\ast$$\ast$\+Username$\ast$$\ast$ (online)\+: message\char`\"{} 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+Uses simple formatting due to library restrictions 
+\end{DoxyNote}
+
+
+Implements \mbox{\hyperlink{classMessageFormattingStrategy_a9299dd8c29ddc530ee119c80793abae6}{Message\+Formatting\+Strategy}}.
+
+\mbox{\Hypertarget{classRichTextStrategy_a4451a0c949039c1d079472ddfd8dd353}\label{classRichTextStrategy_a4451a0c949039c1d079472ddfd8dd353}} 
+\index{RichTextStrategy@{RichTextStrategy}!getStrategyName@{getStrategyName}}
+\index{getStrategyName@{getStrategyName}!RichTextStrategy@{RichTextStrategy}}
+\doxysubsubsection{\texorpdfstring{getStrategyName()}{getStrategyName()}}
+{\footnotesize\ttfamily std\+::string Rich\+Text\+Strategy\+::get\+Strategy\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Gets the strategy name. 
+
+\begin{DoxyReturn}{Returns}
+std\+::string \char`\"{}\+Rich\+Text\char`\"{} 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classMessageFormattingStrategy_a761592e0269f8f97b0d2f213af3fd453}{Message\+Formatting\+Strategy}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{Strategy_8h}{Strategy.\+h}}\item 
+Startegy.\+cpp\end{DoxyCompactItemize}

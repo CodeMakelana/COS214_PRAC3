@@ -1,0 +1,73 @@
+\hypertarget{classSendMessageCommand}{}\doxysection{Send\+Message\+Command Class Reference}
+\label{classSendMessageCommand}\index{SendMessageCommand@{SendMessageCommand}}
+
+
+Concrete command for sending messages to all users in a chat room Implements the \mbox{\hyperlink{classCommand}{Command}} pattern to enable the action of delivering messages to all registered users in a chat room except the sender.  
+
+
+
+
+{\ttfamily \#include $<$Send\+Message\+Command.\+h$>$}
+
+
+
+Inherits \mbox{\hyperlink{classCommand}{Command}}.
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classSendMessageCommand_abb62ce1eaad3319185d1cb3b69a1d344}{Send\+Message\+Command}} (\mbox{\hyperlink{classChatRoom}{Chat\+Room}} $\ast$\mbox{\hyperlink{classCommand_ac38d7713bb9660a23a752a2a2c938dd5}{room}}, \mbox{\hyperlink{classUsers}{Users}} $\ast$\mbox{\hyperlink{classCommand_afaaac0a861b0632822721717a8b833eb}{from\+User}}, const std\+::string \&\mbox{\hyperlink{classCommand_aefb89941a5b2b0b0648cf7b98bb37762}{message}})
+\begin{DoxyCompactList}\small\item\em Constructor for \mbox{\hyperlink{classSendMessageCommand}{Send\+Message\+Command}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classSendMessageCommand_ae6261a5ef02ead22e13d01ea5fc10e76}{execute}} () override
+\begin{DoxyCompactList}\small\item\em Executes the send message command. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Concrete command for sending messages to all users in a chat room Implements the \mbox{\hyperlink{classCommand}{Command}} pattern to enable the action of delivering messages to all registered users in a chat room except the sender. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classSendMessageCommand_abb62ce1eaad3319185d1cb3b69a1d344}\label{classSendMessageCommand_abb62ce1eaad3319185d1cb3b69a1d344}} 
+\index{SendMessageCommand@{SendMessageCommand}!SendMessageCommand@{SendMessageCommand}}
+\index{SendMessageCommand@{SendMessageCommand}!SendMessageCommand@{SendMessageCommand}}
+\doxysubsubsection{\texorpdfstring{SendMessageCommand()}{SendMessageCommand()}}
+{\footnotesize\ttfamily Send\+Message\+Command\+::\+Send\+Message\+Command (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classChatRoom}{Chat\+Room}} $\ast$}]{room,  }\item[{\mbox{\hyperlink{classUsers}{Users}} $\ast$}]{from\+User,  }\item[{const std\+::string \&}]{message }\end{DoxyParamCaption})}
+
+
+
+Constructor for \mbox{\hyperlink{classSendMessageCommand}{Send\+Message\+Command}}. 
+
+Constructs a new \mbox{\hyperlink{classSendMessageCommand}{Send\+Message\+Command}} object.
+
+
+\begin{DoxyParams}{Parameters}
+{\em room} & Pointer to the chat room where message will be sent \\
+\hline
+{\em from\+User} & Pointer to the user who sent the message \\
+\hline
+{\em message} & The message content to send \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classSendMessageCommand_ae6261a5ef02ead22e13d01ea5fc10e76}\label{classSendMessageCommand_ae6261a5ef02ead22e13d01ea5fc10e76}} 
+\index{SendMessageCommand@{SendMessageCommand}!execute@{execute}}
+\index{execute@{execute}!SendMessageCommand@{SendMessageCommand}}
+\doxysubsubsection{\texorpdfstring{execute()}{execute()}}
+{\footnotesize\ttfamily void Send\+Message\+Command\+::execute (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Executes the send message command. 
+
+Executes the send message command Calls the chat room\textquotesingle{}s send\+Message method to deliver the message to all registered users in the room except the sender. 
+
+Implements \mbox{\hyperlink{classCommand_a6fd7d9bd8df8bfc881e4d6c7cd1878b7}{Command}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{SendMessageCommand_8h}{Send\+Message\+Command.\+h}}\item 
+\mbox{\hyperlink{SendMessageCommand_8cpp}{Send\+Message\+Command.\+cpp}}\end{DoxyCompactItemize}
