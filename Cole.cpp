@@ -1,6 +1,6 @@
 /**
  * @file Cole.cpp
- * @brief 
+ * @brief Implementation file for Cole user class
  * @author Tshepiso Makelana
  * @author Arran Lamond
  * @date 2025-09-29

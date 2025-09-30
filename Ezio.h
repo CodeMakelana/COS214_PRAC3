@@ -1,6 +1,6 @@
 /**
  * @file Ezio.h
- * @brief 
+ * @brief Header file for Ezio user class
  * @author Tshepiso Makelana
  * @author Arran Lamond
  * @date 2025-09-29

@@ -1,6 +1,6 @@
 /**
  * @file ChatRoom.cpp
- * @brief 
+ * @brief Implementation file for ChatRoom abstract class
  * @author Tshepiso Makelana
  * @author Arran Lamond
  * @date 2025-09-29
