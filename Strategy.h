@@ -1,6 +1,6 @@
 /**
  * @file Strategy.h
- * @brief 
+ * @brief Header file for Strategy pattern which is used for formatting messages in the chat
  * @author Tshepiso Makelana
  * @author Arran Lamond
  * @date 2025-09-29

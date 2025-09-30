@@ -25,25 +25,21 @@ template <typename T>
 class Iterator {
 public:
     virtual ~Iterator() {}
-    
     /**
      * @brief Moves iterator to first element
      * @return void
      */
     virtual void first() = 0;
-    
     /**
      * @brief Moves iterator to next element
      * @return void
      */
     virtual void next() = 0;
-    
     /**
      * @brief Checks if iteration is complete
      * @return bool True if no more elements, false otherwise
      */
     virtual bool isDone() = 0;
-    
     /**
      * @brief Gets current element
      * @return T Current element in iteration
@@ -55,7 +51,6 @@ public:
  * @class UsersIterator
  * @brief Concrete iterator for user lists
  * @tparam Users Type of user objects
- * 
  * Iterates over a list of user pointers using STL list iterators.
  */
 template <class Users>
@@ -74,12 +69,10 @@ public:
         end = usersList.end();
         current = begin;
     }
-    
     /**
      * @brief Destructor
      */
     ~UsersIterator() {}
-    
     /**
      * @brief Moves iterator to first element
      * @return void
@@ -87,7 +80,6 @@ public:
     void first() override {
         current = begin;
     }
-    
     /**
      * @brief Moves iterator to next element
      * @return void
@@ -97,7 +89,6 @@ public:
             ++current;
         }
     }
-    
     /**
      * @brief Checks if iteration is complete
      * @return bool True if at end, false otherwise
@@ -105,7 +96,6 @@ public:
     bool isDone() override {
         return current == end;
     }
-    
     /**
      * @brief Gets current user
      * @return Users* Pointer to current user, nullptr if done
@@ -118,7 +108,6 @@ public:
 /**
  * @class ChatHistoryIterator
  * @brief Concrete iterator for chat message history
- * 
  * Iterates over a list of chat message strings using STL list iterators.
  */
 class ChatHistoryIterator : public Iterator<std::string*> {
