@@ -13,8 +13,7 @@
 /**
  * @class SendMessageCommand
  * @brief Concrete command for sending messages to all users in a chat room
- * Implements the Command pattern to encapsulate the action of delivering
- * messages to all registered users in a chat room except the sender.
+ * Implements the Command pattern to enable the action of delivering messages to all registered users in a chat room except the sender.
  */
 class SendMessageCommand : public Command {
 public:

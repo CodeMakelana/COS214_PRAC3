@@ -15,9 +15,9 @@
 
 /**
  * @class Dogorithm
- * @brief Concrete chat room class for dog-themed conversations
- * Implements the Mediator pattern to handle communication between users
- * in the dog-themed chat room. Provides iterator creation for users and chat history.
+ * @brief Concrete chat room class for dogconversations
+ * Utilises the Mediator pattern to handle communication between users in the dog chat room.
+ * Provides iterator creation for users and chat history for the dog chatroom
  */
 class Dogorithm : public ChatRoom {
 public:

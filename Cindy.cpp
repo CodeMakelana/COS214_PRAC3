@@ -21,13 +21,3 @@ Cindy::~Cindy() {
     // Destructor logic if needed
 }
 
-/**
- * @brief Allows Cindy to join additional chat rooms
- * @param chatroom Pointer to the chat room to join
- * @note Adds the chatroom to Cindy's list and registers her in that chatroom
- */
-void Cindy::joinChatRoom(ChatRoom* chatroom) {
-    // Add the chatroom to Cindy's list and register her in that chatroom
-    this->chatrooms.push_back(chatroom);
-    chatroom->registerUser(*this);
-}

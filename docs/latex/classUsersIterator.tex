@@ -1,0 +1,147 @@
+\hypertarget{classUsersIterator}{}\doxysection{Users\+Iterator$<$ Users $>$ Class Template Reference}
+\label{classUsersIterator}\index{UsersIterator$<$ Users $>$@{UsersIterator$<$ Users $>$}}
+
+
+Concrete iterator for user lists.  
+
+
+
+
+{\ttfamily \#include $<$Iterator.\+h$>$}
+
+
+
+Inheritance diagram for Users\+Iterator$<$ Users $>$\+:
+% FIG 0
+
+
+Collaboration diagram for Users\+Iterator$<$ Users $>$\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classUsersIterator_ae146fc482143a5f9ffc7d26254ff6b3a}{Users\+Iterator}} (std\+::list$<$ \mbox{\hyperlink{classUsers}{Users}} $\ast$ $>$ \&users\+List)
+\begin{DoxyCompactList}\small\item\em Constructs iterator for user list. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classUsersIterator_a0e17a2c8dba00e3584474484438f6772}\label{classUsersIterator_a0e17a2c8dba00e3584474484438f6772}} 
+\mbox{\hyperlink{classUsersIterator_a0e17a2c8dba00e3584474484438f6772}{$\sim$\+Users\+Iterator}} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classUsersIterator_afc2e8d42f5fcf660ba0a19bdbd2ef293}{first}} () override
+\begin{DoxyCompactList}\small\item\em Moves iterator to first element. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classUsersIterator_a1a692a75f7d5dcbafa1799f281d54419}{next}} () override
+\begin{DoxyCompactList}\small\item\em Moves iterator to next element. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classUsersIterator_afbccf2d0feb78ffcee62c8bcdfededa8}{is\+Done}} () override
+\begin{DoxyCompactList}\small\item\em Checks if iteration is complete. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classUsers}{Users}} $\ast$ \mbox{\hyperlink{classUsersIterator_a5baf11260399f3d39bfdb4c5bb07909e}{current\+Item}} () override
+\begin{DoxyCompactList}\small\item\em Gets current user. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$class Users$>$\newline
+class Users\+Iterator$<$ Users $>$}
+
+Concrete iterator for user lists. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em \mbox{\hyperlink{classUsers}{Users}}} & Type of user objects Iterates over a list of user pointers using STL list iterators. \\
+\hline
+\end{DoxyTemplParams}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classUsersIterator_ae146fc482143a5f9ffc7d26254ff6b3a}\label{classUsersIterator_ae146fc482143a5f9ffc7d26254ff6b3a}} 
+\index{UsersIterator$<$ Users $>$@{UsersIterator$<$ Users $>$}!UsersIterator@{UsersIterator}}
+\index{UsersIterator@{UsersIterator}!UsersIterator$<$ Users $>$@{UsersIterator$<$ Users $>$}}
+\doxysubsubsection{\texorpdfstring{UsersIterator()}{UsersIterator()}}
+{\footnotesize\ttfamily template$<$class Users $>$ \\
+\mbox{\hyperlink{classUsersIterator}{Users\+Iterator}}$<$ \mbox{\hyperlink{classUsers}{Users}} $>$\+::\mbox{\hyperlink{classUsersIterator}{Users\+Iterator}} (\begin{DoxyParamCaption}\item[{std\+::list$<$ \mbox{\hyperlink{classUsers}{Users}} $\ast$ $>$ \&}]{users\+List }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructs iterator for user list. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em users\+List} & List of users to iterate over \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classUsersIterator_a5baf11260399f3d39bfdb4c5bb07909e}\label{classUsersIterator_a5baf11260399f3d39bfdb4c5bb07909e}} 
+\index{UsersIterator$<$ Users $>$@{UsersIterator$<$ Users $>$}!currentItem@{currentItem}}
+\index{currentItem@{currentItem}!UsersIterator$<$ Users $>$@{UsersIterator$<$ Users $>$}}
+\doxysubsubsection{\texorpdfstring{currentItem()}{currentItem()}}
+{\footnotesize\ttfamily template$<$class Users $>$ \\
+\mbox{\hyperlink{classUsers}{Users}}$\ast$ \mbox{\hyperlink{classUsersIterator}{Users\+Iterator}}$<$ \mbox{\hyperlink{classUsers}{Users}} $>$\+::current\+Item (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Gets current user. 
+
+\begin{DoxyReturn}{Returns}
+Users$\ast$ Pointer to current user, nullptr if done 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classIterator_a1fce5bc9b2218407b5cedf2a0ba3131b}{Iterator$<$ Users $\ast$ $>$}}.
+
+\mbox{\Hypertarget{classUsersIterator_afc2e8d42f5fcf660ba0a19bdbd2ef293}\label{classUsersIterator_afc2e8d42f5fcf660ba0a19bdbd2ef293}} 
+\index{UsersIterator$<$ Users $>$@{UsersIterator$<$ Users $>$}!first@{first}}
+\index{first@{first}!UsersIterator$<$ Users $>$@{UsersIterator$<$ Users $>$}}
+\doxysubsubsection{\texorpdfstring{first()}{first()}}
+{\footnotesize\ttfamily template$<$class Users $>$ \\
+void \mbox{\hyperlink{classUsersIterator}{Users\+Iterator}}$<$ \mbox{\hyperlink{classUsers}{Users}} $>$\+::first (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Moves iterator to first element. 
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classIterator_a6f13cc79a1574086c63ce4ddba1d3d9f}{Iterator$<$ Users $\ast$ $>$}}.
+
+\mbox{\Hypertarget{classUsersIterator_afbccf2d0feb78ffcee62c8bcdfededa8}\label{classUsersIterator_afbccf2d0feb78ffcee62c8bcdfededa8}} 
+\index{UsersIterator$<$ Users $>$@{UsersIterator$<$ Users $>$}!isDone@{isDone}}
+\index{isDone@{isDone}!UsersIterator$<$ Users $>$@{UsersIterator$<$ Users $>$}}
+\doxysubsubsection{\texorpdfstring{isDone()}{isDone()}}
+{\footnotesize\ttfamily template$<$class Users $>$ \\
+bool \mbox{\hyperlink{classUsersIterator}{Users\+Iterator}}$<$ \mbox{\hyperlink{classUsers}{Users}} $>$\+::is\+Done (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Checks if iteration is complete. 
+
+\begin{DoxyReturn}{Returns}
+bool True if at end, false otherwise 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classIterator_a8e7b414c641f4f0838ff8bd6ba954b7a}{Iterator$<$ Users $\ast$ $>$}}.
+
+\mbox{\Hypertarget{classUsersIterator_a1a692a75f7d5dcbafa1799f281d54419}\label{classUsersIterator_a1a692a75f7d5dcbafa1799f281d54419}} 
+\index{UsersIterator$<$ Users $>$@{UsersIterator$<$ Users $>$}!next@{next}}
+\index{next@{next}!UsersIterator$<$ Users $>$@{UsersIterator$<$ Users $>$}}
+\doxysubsubsection{\texorpdfstring{next()}{next()}}
+{\footnotesize\ttfamily template$<$class Users $>$ \\
+void \mbox{\hyperlink{classUsersIterator}{Users\+Iterator}}$<$ \mbox{\hyperlink{classUsers}{Users}} $>$\+::next (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Moves iterator to next element. 
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classIterator_a94a7b0c50676cd9ee924eddece41d8d4}{Iterator$<$ Users $\ast$ $>$}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{Iterator_8h}{Iterator.\+h}}\end{DoxyCompactItemize}

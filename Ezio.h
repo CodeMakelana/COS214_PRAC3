@@ -14,8 +14,7 @@
 /**
  * @class Ezio
  * @brief Concrete user class representing Ezio in the PetSpace chat system
- * Ezio is a specific user who inherits all functionality from the base Users class
- * and can participate in chat rooms with potential specialized behavior.
+ * Ezio is a specific user who inherits all functionality from the base Users class and can participate in chat rooms with potential specialized behavior.
  */
 class Ezio : public Users {
 public:

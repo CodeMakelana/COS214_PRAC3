@@ -1,0 +1,13 @@
+digraph "MessageFormattingStrategy"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="MessageFormattingStrategy",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Abstract strategy interface for message formatting Defines the contract for different message formatt..."];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="PlainTextStrategy",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classPlainTextStrategy.html",tooltip="Plain text formatting strategy Formats messages as: \"Username: message\"."];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="RichTextStrategy",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classRichTextStrategy.html",tooltip="Rich text formatting strategy Formats messages as: \"**Username** (online): message\" Note: Uses simple..."];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="TimestampStrategy",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classTimestampStrategy.html",tooltip="Timestamp formatting strategy   Formats messages as: \"[TIMESTAMP] Username: message\" Note: Uses place..."];
+}

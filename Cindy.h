@@ -32,14 +32,6 @@ class Cindy : public Users{
      */
     ~Cindy();
 
-    //for more than 1 chatrooms
-    /**
-     * @brief Allows Cindy to join additional chat rooms
-     * @param chatroom Pointer to the chat room to join
-     * @note Enables participation in multiple chat rooms simultaneously
-     */
-    void joinChatRoom(ChatRoom* chatroom);
-
 };
 
 

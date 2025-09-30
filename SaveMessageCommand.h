@@ -13,8 +13,7 @@
 /**
  * @class SaveMessageCommand
  * @brief Concrete command for saving messages to chat history
- * Implements the Command pattern to encapsulate the action of saving
- * messages to a chat room's history for later retrieval.
+ * Implements the Command pattern to enable the action of saving messages to a chat rooms history for later retrieval.
  */
 class SaveMessageCommand : public Command {
 public:

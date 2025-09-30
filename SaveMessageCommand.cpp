@@ -21,8 +21,7 @@ SaveMessageCommand::SaveMessageCommand(ChatRoom* room, Users* fromUser, const st
 
 /**
  * @brief Executes the save message command
- * Calls the chat room's saveMessage method to append the message
- * to the chat history for later retrieval.
+ * Calls the chat rooms saveMessage method to add the message to the chat history for later retrieval.
  */
 void SaveMessageCommand::execute() {
     // Uses chatRoom to save the messages

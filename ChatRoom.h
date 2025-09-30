@@ -25,9 +25,20 @@ template<typename T> class Iterator;
 class ChatRoom {
     //attribute doxygen:
     protected:
-    std::string name;                       ///< Name of the chat room
-    std::list<std::string> chatHistory;     ///< History of all messages
-    std::list<Users*> users;                ///< Registered users in this room
+    /**
+     * @brief Name of the chat room
+     */
+    std::string name;
+
+    /**
+     * @brief History of all messages
+     */
+    std::list<std::string> chatHistory;
+
+    /**
+     * @brief Registered users in this room
+     */
+    std::list<Users*> users;
     
     public:
     /**

@@ -27,10 +27,22 @@ class Command;
  */
 class Users {
     protected: 
-    std::string name;                           ///< Name of the user
-    std::vector<ChatRoom*> chatrooms;           ///< List of chat rooms user has joined
-    std::vector<Command*> commands;             ///< Queue of commands to be executed
-    MessageFormattingStrategy* messageStrategy; ///< Strategy for formatting messages
+    /**
+     * @brief Name of the user
+     */
+    std::string name;
+    /**
+     * @brief List of chat rooms user has joined
+     */
+    std::vector<ChatRoom*> chatrooms;
+    /**
+     * @brief Queue of commands to be executed
+     */
+    std::vector<Command*> commands;
+    /**
+     * @brief Strategy for formatting messages
+     */
+    MessageFormattingStrategy* messageStrategy;
 
     public:
     /**
@@ -80,6 +92,12 @@ class Users {
      * @return MessageFormattingStrategy* Pointer to current strategy
      */
     MessageFormattingStrategy* getMessageStrategy();
+    /**
+     * @brief Allows user to join additional chat rooms
+     * @param chatroom Pointer to the chat room to join
+     * @note Enables participation in multiple chat rooms simultaneously
+     */
+    void joinChatRoom(ChatRoom* chatroom);
 };
 
 #endif //USERS_H

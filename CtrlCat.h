@@ -15,9 +15,9 @@
 
 /**
  * @class CtrlCat
- * @brief Concrete chat room class for cat-themed conversations
- * Implements the Mediator pattern to handle communication between users
- * in the cat-themed chat room. Provides iterator creation for users and chat history.
+ * @brief Concrete chat room class for cat conversations
+ * Utilises Mediator pattern to handle communication between users in the cat chatroom.
+ * Provides iterator creation for users and chat history for the cat chatroom
  */
 class CtrlCat : public ChatRoom {
 public:

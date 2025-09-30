@@ -22,9 +22,18 @@
 class Command {
 
     protected:
-    ChatRoom* room;         ///< The chat room where the command will be executed
-    Users* fromUser;        ///< The user who initiated the command
-    std::string message;    ///< The message content for the command
+    /**
+     * @brief The chat room where the command will be executed
+     */
+    ChatRoom* room;
+    /**
+     * @brief The user who initiated the command
+     */
+    Users* fromUser;
+    /**
+     * @brief The message content for the command
+     */
+    std::string message;
 
     public:
     virtual ~Command() {}

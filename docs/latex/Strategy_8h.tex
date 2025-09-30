@@ -1,0 +1,37 @@
+\hypertarget{Strategy_8h}{}\doxysection{Strategy.\+h File Reference}
+\label{Strategy_8h}\index{Strategy.h@{Strategy.h}}
+
+
+Header file for Strategy pattern which is used for formatting messages in the chat.  
+
+
+{\ttfamily \#include $<$string$>$}\newline
+Include dependency graph for Strategy.\+h\+:
+% FIG 0
+This graph shows which files directly or indirectly include this file\+:
+% FIG 1
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classMessageFormattingStrategy}{Message\+Formatting\+Strategy}}
+\begin{DoxyCompactList}\small\item\em Abstract strategy interface for message formatting Defines the contract for different message formatting algorithms. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classPlainTextStrategy}{Plain\+Text\+Strategy}}
+\begin{DoxyCompactList}\small\item\em Plain text formatting strategy Formats messages as\+: \char`\"{}\+Username\+: message\char`\"{}. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classTimestampStrategy}{Timestamp\+Strategy}}
+\begin{DoxyCompactList}\small\item\em Timestamp formatting strategy ~\newline
+ Formats messages as\+: \char`\"{}\mbox{[}\+TIMESTAMP\mbox{]} Username\+: message\char`\"{} Note\+: Uses placeholder timestamp due to library restrictions. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{classRichTextStrategy}{Rich\+Text\+Strategy}}
+\begin{DoxyCompactList}\small\item\em Rich text formatting strategy Formats messages as\+: \char`\"{}$\ast$$\ast$\+Username$\ast$$\ast$ (online)\+: message\char`\"{} Note\+: Uses simple formatting due to library restrictions. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Header file for Strategy pattern which is used for formatting messages in the chat. 
+
+\begin{DoxyAuthor}{Author}
+Tshepiso Makelana 
+
+Arran Lamond 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+2025-\/09-\/29 
+\end{DoxyDate}

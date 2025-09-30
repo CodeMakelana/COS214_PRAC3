@@ -1,0 +1,116 @@
+\hypertarget{classIterator}{}\doxysection{Iterator$<$ T $>$ Class Template Reference}
+\label{classIterator}\index{Iterator$<$ T $>$@{Iterator$<$ T $>$}}
+
+
+Abstract iterator interface for traversing collections.  
+
+
+
+
+{\ttfamily \#include $<$Iterator.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{classIterator_a6f13cc79a1574086c63ce4ddba1d3d9f}{first}} ()=0
+\begin{DoxyCompactList}\small\item\em Moves iterator to first element. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classIterator_a94a7b0c50676cd9ee924eddece41d8d4}{next}} ()=0
+\begin{DoxyCompactList}\small\item\em Moves iterator to next element. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{classIterator_a8e7b414c641f4f0838ff8bd6ba954b7a}{is\+Done}} ()=0
+\begin{DoxyCompactList}\small\item\em Checks if iteration is complete. \end{DoxyCompactList}\item 
+virtual T \mbox{\hyperlink{classIterator_a1fce5bc9b2218407b5cedf2a0ba3131b}{current\+Item}} ()=0
+\begin{DoxyCompactList}\small\item\em Gets current element. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$typename T$>$\newline
+class Iterator$<$ T $>$}
+
+Abstract iterator interface for traversing collections. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & Type of elements being iterated over Provides standard interface for accessing elements without exposing underlying collection structure. \\
+\hline
+\end{DoxyTemplParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classIterator_a1fce5bc9b2218407b5cedf2a0ba3131b}\label{classIterator_a1fce5bc9b2218407b5cedf2a0ba3131b}} 
+\index{Iterator$<$ T $>$@{Iterator$<$ T $>$}!currentItem@{currentItem}}
+\index{currentItem@{currentItem}!Iterator$<$ T $>$@{Iterator$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{currentItem()}{currentItem()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+virtual T \mbox{\hyperlink{classIterator}{Iterator}}$<$ T $>$\+::current\+Item (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Gets current element. 
+
+\begin{DoxyReturn}{Returns}
+T Current element in iteration 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classChatHistoryIterator_accddb0e78d92da64a4474fb73c96504a}{Chat\+History\+Iterator}}, and \mbox{\hyperlink{classUsersIterator_a5baf11260399f3d39bfdb4c5bb07909e}{Users\+Iterator$<$ Users $>$}}.
+
+\mbox{\Hypertarget{classIterator_a6f13cc79a1574086c63ce4ddba1d3d9f}\label{classIterator_a6f13cc79a1574086c63ce4ddba1d3d9f}} 
+\index{Iterator$<$ T $>$@{Iterator$<$ T $>$}!first@{first}}
+\index{first@{first}!Iterator$<$ T $>$@{Iterator$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{first()}{first()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+virtual void \mbox{\hyperlink{classIterator}{Iterator}}$<$ T $>$\+::first (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Moves iterator to first element. 
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classChatHistoryIterator_ae9dec32d60406e69d0f6f60c9d745df7}{Chat\+History\+Iterator}}, and \mbox{\hyperlink{classUsersIterator_afc2e8d42f5fcf660ba0a19bdbd2ef293}{Users\+Iterator$<$ Users $>$}}.
+
+\mbox{\Hypertarget{classIterator_a8e7b414c641f4f0838ff8bd6ba954b7a}\label{classIterator_a8e7b414c641f4f0838ff8bd6ba954b7a}} 
+\index{Iterator$<$ T $>$@{Iterator$<$ T $>$}!isDone@{isDone}}
+\index{isDone@{isDone}!Iterator$<$ T $>$@{Iterator$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{isDone()}{isDone()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+virtual bool \mbox{\hyperlink{classIterator}{Iterator}}$<$ T $>$\+::is\+Done (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Checks if iteration is complete. 
+
+\begin{DoxyReturn}{Returns}
+bool True if no more elements, false otherwise 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classChatHistoryIterator_aee611df95153ef09c2820c78b6bc2098}{Chat\+History\+Iterator}}, and \mbox{\hyperlink{classUsersIterator_afbccf2d0feb78ffcee62c8bcdfededa8}{Users\+Iterator$<$ Users $>$}}.
+
+\mbox{\Hypertarget{classIterator_a94a7b0c50676cd9ee924eddece41d8d4}\label{classIterator_a94a7b0c50676cd9ee924eddece41d8d4}} 
+\index{Iterator$<$ T $>$@{Iterator$<$ T $>$}!next@{next}}
+\index{next@{next}!Iterator$<$ T $>$@{Iterator$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{next()}{next()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+virtual void \mbox{\hyperlink{classIterator}{Iterator}}$<$ T $>$\+::next (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Moves iterator to next element. 
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classChatHistoryIterator_a98fa07f132e9b38ccb21d7cf4d3d9138}{Chat\+History\+Iterator}}, and \mbox{\hyperlink{classUsersIterator_a1a692a75f7d5dcbafa1799f281d54419}{Users\+Iterator$<$ Users $>$}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{ChatRoom_8h}{Chat\+Room.\+h}}\item 
+\mbox{\hyperlink{Iterator_8h}{Iterator.\+h}}\end{DoxyCompactItemize}

@@ -21,9 +21,7 @@ SendMessageCommand::SendMessageCommand(ChatRoom* room, Users* fromUser, const st
 
 /**
  * @brief Executes the send message command
- * 
- * Calls the chat room's sendMessage method to deliver the message
- * to all registered users in the room except the sender.
+ * Calls the chat room's sendMessage method to deliver the message to all registered users in the room except the sender.
  */
 void SendMessageCommand::execute() {
     // Uses the chatRoom to deliver messages

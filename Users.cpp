@@ -109,3 +109,14 @@ void Users::setMessageStrategy(MessageFormattingStrategy* strategy) {
 MessageFormattingStrategy* Users::getMessageStrategy() {
     return messageStrategy;
 }
+
+/**
+ * @brief Allows user to join additional chat rooms
+ * @param chatroom Pointer to the chat room to join
+ * @note Adds the chatroom to user's list and registers them in that chatroom
+ */
+void Users::joinChatRoom(ChatRoom* chatroom) {
+    // Add the chatroom to user's list and register them in that chatroom
+    this->chatrooms.push_back(chatroom);
+    chatroom->registerUser(*this);
+}

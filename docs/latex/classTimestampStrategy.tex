@@ -1,0 +1,90 @@
+\hypertarget{classTimestampStrategy}{}\doxysection{Timestamp\+Strategy Class Reference}
+\label{classTimestampStrategy}\index{TimestampStrategy@{TimestampStrategy}}
+
+
+Timestamp formatting strategy ~\newline
+ Formats messages as\+: \char`\"{}\mbox{[}\+TIMESTAMP\mbox{]} Username\+: message\char`\"{} Note\+: Uses placeholder timestamp due to library restrictions.  
+
+
+
+
+{\ttfamily \#include $<$Strategy.\+h$>$}
+
+
+
+Inheritance diagram for Timestamp\+Strategy\+:
+% FIG 0
+
+
+Collaboration diagram for Timestamp\+Strategy\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classTimestampStrategy_aad560d37e227b31b8ddfbed33bc1b859}\label{classTimestampStrategy_aad560d37e227b31b8ddfbed33bc1b859}} 
+\mbox{\hyperlink{classTimestampStrategy_aad560d37e227b31b8ddfbed33bc1b859}{Timestamp\+Strategy}} ()
+\begin{DoxyCompactList}\small\item\em Constructs a new \mbox{\hyperlink{classTimestampStrategy}{Timestamp\+Strategy}} object. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classTimestampStrategy_aaac34fcb0488ebd5edb9f6d4546a0883}\label{classTimestampStrategy_aaac34fcb0488ebd5edb9f6d4546a0883}} 
+virtual \mbox{\hyperlink{classTimestampStrategy_aaac34fcb0488ebd5edb9f6d4546a0883}{$\sim$\+Timestamp\+Strategy}} ()
+\begin{DoxyCompactList}\small\item\em Destroys the \mbox{\hyperlink{classTimestampStrategy}{Timestamp\+Strategy}} object. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classTimestampStrategy_a03f75b9a12952707caa49399dd04ad30}{format\+Message}} (const std\+::string \&message, const \mbox{\hyperlink{classUsers}{Users}} \&from\+User) override
+\begin{DoxyCompactList}\small\item\em Formats message with timestamp prefix. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classTimestampStrategy_a5d934c75ca60061e532e01dab0b12ffa}{get\+Strategy\+Name}} () const override
+\begin{DoxyCompactList}\small\item\em Gets the strategy name. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Timestamp formatting strategy ~\newline
+ Formats messages as\+: \char`\"{}\mbox{[}\+TIMESTAMP\mbox{]} Username\+: message\char`\"{} Note\+: Uses placeholder timestamp due to library restrictions. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classTimestampStrategy_a03f75b9a12952707caa49399dd04ad30}\label{classTimestampStrategy_a03f75b9a12952707caa49399dd04ad30}} 
+\index{TimestampStrategy@{TimestampStrategy}!formatMessage@{formatMessage}}
+\index{formatMessage@{formatMessage}!TimestampStrategy@{TimestampStrategy}}
+\doxysubsubsection{\texorpdfstring{formatMessage()}{formatMessage()}}
+{\footnotesize\ttfamily std\+::string Timestamp\+Strategy\+::format\+Message (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{message,  }\item[{const \mbox{\hyperlink{classUsers}{Users}} \&}]{from\+User }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Formats message with timestamp prefix. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em message} & The raw message content \\
+\hline
+{\em from\+User} & The user sending the message \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+std\+::string Formatted message \char`\"{}\mbox{[}\+TIMESTAMP\mbox{]} Username\+: message\char`\"{} 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+Uses placeholder timestamp due to library restrictions 
+\end{DoxyNote}
+
+
+Implements \mbox{\hyperlink{classMessageFormattingStrategy_a9299dd8c29ddc530ee119c80793abae6}{Message\+Formatting\+Strategy}}.
+
+\mbox{\Hypertarget{classTimestampStrategy_a5d934c75ca60061e532e01dab0b12ffa}\label{classTimestampStrategy_a5d934c75ca60061e532e01dab0b12ffa}} 
+\index{TimestampStrategy@{TimestampStrategy}!getStrategyName@{getStrategyName}}
+\index{getStrategyName@{getStrategyName}!TimestampStrategy@{TimestampStrategy}}
+\doxysubsubsection{\texorpdfstring{getStrategyName()}{getStrategyName()}}
+{\footnotesize\ttfamily std\+::string Timestamp\+Strategy\+::get\+Strategy\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Gets the strategy name. 
+
+\begin{DoxyReturn}{Returns}
+std\+::string \char`\"{}\+Timestamp\char`\"{} 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classMessageFormattingStrategy_a761592e0269f8f97b0d2f213af3fd453}{Message\+Formatting\+Strategy}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{Strategy_8h}{Strategy.\+h}}\item 
+Startegy.\+cpp\end{DoxyCompactItemize}

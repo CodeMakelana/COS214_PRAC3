@@ -1,0 +1,74 @@
+\hypertarget{classMessageFormattingStrategy}{}\doxysection{Message\+Formatting\+Strategy Class Reference}
+\label{classMessageFormattingStrategy}\index{MessageFormattingStrategy@{MessageFormattingStrategy}}
+
+
+Abstract strategy interface for message formatting Defines the contract for different message formatting algorithms.  
+
+
+
+
+{\ttfamily \#include $<$Strategy.\+h$>$}
+
+
+
+Inheritance diagram for Message\+Formatting\+Strategy\+:
+% FIG 0
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual std\+::string \mbox{\hyperlink{classMessageFormattingStrategy_a9299dd8c29ddc530ee119c80793abae6}{format\+Message}} (const std\+::string \&message, const \mbox{\hyperlink{classUsers}{Users}} \&from\+User)=0
+\begin{DoxyCompactList}\small\item\em Format a message according to the strategy\textquotesingle{}s algorithm. \end{DoxyCompactList}\item 
+virtual std\+::string \mbox{\hyperlink{classMessageFormattingStrategy_a761592e0269f8f97b0d2f213af3fd453}{get\+Strategy\+Name}} () const =0
+\begin{DoxyCompactList}\small\item\em Get strategy name for identification. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Abstract strategy interface for message formatting Defines the contract for different message formatting algorithms. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classMessageFormattingStrategy_a9299dd8c29ddc530ee119c80793abae6}\label{classMessageFormattingStrategy_a9299dd8c29ddc530ee119c80793abae6}} 
+\index{MessageFormattingStrategy@{MessageFormattingStrategy}!formatMessage@{formatMessage}}
+\index{formatMessage@{formatMessage}!MessageFormattingStrategy@{MessageFormattingStrategy}}
+\doxysubsubsection{\texorpdfstring{formatMessage()}{formatMessage()}}
+{\footnotesize\ttfamily virtual std\+::string Message\+Formatting\+Strategy\+::format\+Message (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{message,  }\item[{const \mbox{\hyperlink{classUsers}{Users}} \&}]{from\+User }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Format a message according to the strategy\textquotesingle{}s algorithm. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em message} & The raw message content \\
+\hline
+{\em from\+User} & The user sending the message \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Formatted message string 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classRichTextStrategy_a0baf14d66465f108bf3f66e23a0056dd}{Rich\+Text\+Strategy}}, \mbox{\hyperlink{classTimestampStrategy_a03f75b9a12952707caa49399dd04ad30}{Timestamp\+Strategy}}, and \mbox{\hyperlink{classPlainTextStrategy_ad773677d1ac85e393e816bc8c360aae2}{Plain\+Text\+Strategy}}.
+
+\mbox{\Hypertarget{classMessageFormattingStrategy_a761592e0269f8f97b0d2f213af3fd453}\label{classMessageFormattingStrategy_a761592e0269f8f97b0d2f213af3fd453}} 
+\index{MessageFormattingStrategy@{MessageFormattingStrategy}!getStrategyName@{getStrategyName}}
+\index{getStrategyName@{getStrategyName}!MessageFormattingStrategy@{MessageFormattingStrategy}}
+\doxysubsubsection{\texorpdfstring{getStrategyName()}{getStrategyName()}}
+{\footnotesize\ttfamily virtual std\+::string Message\+Formatting\+Strategy\+::get\+Strategy\+Name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Get strategy name for identification. 
+
+\begin{DoxyReturn}{Returns}
+String identifier for the strategy 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classRichTextStrategy_a4451a0c949039c1d079472ddfd8dd353}{Rich\+Text\+Strategy}}, \mbox{\hyperlink{classTimestampStrategy_a5d934c75ca60061e532e01dab0b12ffa}{Timestamp\+Strategy}}, and \mbox{\hyperlink{classPlainTextStrategy_a7d63ce9f6758a4f0651ebba37c7610c9}{Plain\+Text\+Strategy}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{Strategy_8h}{Strategy.\+h}}\end{DoxyCompactItemize}
